@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Пинк</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="pink-logo.svg" width="74" height="23" alt="Пинк" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list"><a href="foto.html">Фотографии</a></li>
+            <li class="site-list"><a href="form.html">Конкурс</a></li>
+            <li class="site-list"><a href="#">html academy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="competition">
+        <h2 class="competition__header">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </h2>
+      </section>
+    </header>
+
+    <section class="form">
+      <h3 class="form__description">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту!
+      </h3>
+      <fieldset class="form__data">
+        <div class="name">
+          <label class="name__label" for="family-name-input">ФАМИЛИЯ:</label>
+          <input
+            class="name__input"
+            id="family-name-input"
+            type="text"
+            placeholder="Укажите фамилию *"
+            required
+          />
+        </div>
+        <div class="name">
+          <label class="name__label" for="name-input">ИМЯ:</label>
+          <input
+            class="name__input"
+            id="name-input"
+            type="text"
+            placeholder="Введите ваше имя *"
+            required
+          />
+        </div>
+        <div class="name">
+          <label class="name__label" for="father-name-input">ОТЧЕСТВО:</label>
+          <input
+            class="name__input"
+            id="father-name-input"
+            type="text"
+            placeholder="Ну и отчество тоже"
+          />
+        </div>
+      </fieldset>
+      <fieldset class="form__travel">
+        <legend class="form__legend">
+          Ваши безбашенные достижения в путешествии
+        </legend>
+        <div class="form__container">
+          <label class="form__label check">
+            <input class="check__input" type="checkbox" checked />Сделал селфи с
+            акулой
+            <span class="check-box"></span>
+          </label>
+          <label class="form__label check">
+            <input class="check__input" type="checkbox" checked />Обгорел на
+            пляже
+            <span class="check-box"></span>
+          </label>
+          <label class="form__label check">
+            <input class="check__input" type="checkbox" />Видел Чака Норриса
+            <span class="check-box"></span>
+          </label>
+          <label class="form__label check">
+            <input class="check__input" type="checkbox" />Накупил сувениров
+            <span class="check-box"></span>
+          </label>
+          <label class="form__label check">
+            <input class="check__input" type="checkbox" checked />Удержал башню
+            <span class="check-box"></span>
+          </label>
+          <label class="form__label check">
+            <input class="check__input" type="checkbox" />Разгромил отель
+            <span class="check-box"></span>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="contacts-fieldset">
+        <div class="contacts-fieldset__phone">
+          <label class="contacts-fieldset__label" for="phone-number-input"
+            >НОМЕР ТЕЛЕФОНА</label
+          >
+          <input
+            class="contacts-fieldset__input"
+            id="phone-number-input"
+            type="tel"
+            placeholder="Номер, пожалуйста"
+          />
+        </div>
+        <div class="contacts-fieldset__email">
+          <label class="contacts-fieldset__label" for="email-address-input"
+            >АДРЕС ПОЧТЫ</label
+          >
+          <input
+            class="contacts-fieldset__input"
+            id="email-address-input"
+            type="email"
+            placeholder="Введите почту *"
+            required
+          />
+        </div>
+      </fieldset>
+      <fieldset class="form__platform">
+        <legend class="form__legend">
+          С каким приложением путешествовали?
+        </legend>
+        <div class="form__container">
+          <label class="form__label check">
+            <input class="check__input" type="radio" checked />Pink для iOS
+            <span class="check-radio"></span>
+          </label>
+          <label class="form__label check">
+            <input class="check__input" type="radio" />Pink на Android
+            <span class="check-radio"></span>
+          </label>
+          <label class="form__label check">
+            <input class="check__input" type="radio" />Windows Phone
+            <span class="check-radio"></span>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="form__emotions">
+        <legend class="form__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+        <textarea
+          class="form__emotions-text-area"
+          name="message"
+          placeholder="Можно прям в красках, не
+          стесняясь в выражениях"
+        ></textarea>
+      </fieldset>
+      <div class="form__submit-button">
+        <button class="form__submit-button button" type="submit">
+          Отправить форму
+        </button>
+      </div>
+      <p class="form__hint">* — обязательные поля</p>
+    </section>
+    <footer class="footer">
+      <a class="footer__logo"></a>
+      <ul class="footer__socials">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="copyright"></div>
+    </footer>
+  </body>
+</html>
