@@ -1,0 +1,115 @@
+
+.main-nav {
+  background-color: #283645;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+@media (max-width: @mobile-width) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+}
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  height: 24px;
+  width: 50px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+
+  &:active,
+  &:hover {
+    background-color: #d22856;
+  }
+}
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 250px;
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#d22856, 30%);
+  box-shadow: 0 8px 0 0 fade(#d22856, 30%), 0 16px 0 0 fade(#d22856, 30%);
+}
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+  left: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active,
+  &::before {
+    background-color: fade(#d22856, 30%);
+  }
+}
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+.main-nav--nojs .main-nav--wrapper {
+  position: static;
+  min-height: 0;
+}
+.main-nav__item {
+  font-weight: 700;
+}
+.main-nav__item a {
+  position: relative;
+  display: block;
+  padding-bottom: 13px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #283645;
+  border: 1px solid #000000;
+  text-align: center;
+  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+}
+
