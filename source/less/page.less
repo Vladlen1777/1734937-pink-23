@@ -1,4 +1,18 @@
 .page__body {
   width: 320px;
 }
+.page__header {
+  background-image: url(img/back-mobile.jpg);
+  position: absolute;
+  width: 320px;
+  height: 465px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url(img/back-mobile@2x.jpg);
+  }
+  @media (min-width: @desktop-width) {
+    height: 645px;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+}
