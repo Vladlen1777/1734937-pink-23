@@ -1,45 +1,60 @@
 .photos__header {
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px;
-color: #283645;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 555px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 610px;
+  }
 }
 .photos__list {
-list-style: none;
-text-align: center;
+  list-style: none;
+  text-align: center;
 }
 .photos__img {
   width: 320px;
 }
 .photos__block {
   height: 192px;
-width: 280px;
-color: #f2f2f2;
+  width: 280px;
+  background-color: #f2f2f2;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 10px;
 }
 .photos__author {
-font-size: 14px;
-font-weight: 700;
-line-height: 24px;
-color: #283645;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #283645;
+  padding-left: 17px;
 }
 .photos__time {
-font-size: 12px;
-font-weight: 300;
-line-height: 24px;
-color: #283645;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #283645;
 }
 .photos__comment {
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283645;
+  padding-left: 17px;
 }
 .photos__like {
-font-size: 12px;
-font-weight: 400;
-line-height: 24px;
-color: #D22856;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #d22856;
+  padding-left: 48px;
 }
 .photos__like::before {
   background-image: url("heart.svg");
