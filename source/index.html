@@ -13,23 +13,35 @@
   <body class="page__body">
     <header class="page__header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a class="main-nav__logo">
-          <picture>
-            <source
-              media="(min-width: 660px)"
-              srcset="img/pink-logo-tablet.svg"
-            />
-            <source
-              media="(min-width: 1200px)"
-              srcset="img/pink-logo-desktop.svg"
-            />
-            <img
-              src="img/pink-logo.svg"
-              width="74"
-              height="23"
-              alt="логотип сайта пинк"
-            />
-          </picture>
+        <a
+          class="main-nav__logo"
+          href="index.html"
+          aria-label="Логотип на главную страницу"
+        >
+          <svg
+            class="main-nav__logo-mobile"
+            width="74"
+            height="23"
+            viewBox="0 0 74 23"
+          >
+            <use xlink:href="img/svg-sprite.svg#logo-pink-mobile"></use>
+          </svg>
+          <svg
+            class="main-nav__logo-tablet"
+            width="145"
+            height="40"
+            viewBox="0 0 145 40"
+          >
+            <use xlink:href="img/svg-sprite.svg#logo-pink-tablet"></use>
+          </svg>
+          <svg
+            class="main-nav__logo-desktop"
+            width="147"
+            height="40"
+            viewBox="0 0 147 40"
+          >
+            <use xlink:href="img/svg-sprite.svg#logo-pink-desktop"></use>
+          </svg>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>

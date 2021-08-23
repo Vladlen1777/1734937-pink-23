@@ -1,6 +1,27 @@
+.photo {
+  background-image: url(img/back-mobile.jpg);
+  width: 320px;
+  height: 465px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(img/back-mobile@2x.jpg);
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 645px;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+}
 .photo__header {
-font-size: 24px;
-font-weight: 300;
-line-height: 33px;
-color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: center;
+  color: #ffffff;
+
+  @media (min-width: @tablet-width), @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }

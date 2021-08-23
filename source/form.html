@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon/icon-180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
+    <header class="page__header-catalog">
+      <a class="main-nav__logo">
         <img src="pink-logo.svg" width="74" height="23" alt="Пинк" />
       </a>
       <nav class="main-nav">
@@ -77,28 +81,28 @@
           <label class="form__label check">
             <input class="form__input" type="checkbox" checked />Сделал селфи с
             акулой
-            <span class="check-box"></span>
+            <span class="check__box"></span>
           </label>
           <label class="form__label check">
             <input class="form__input" type="checkbox" checked />Обгорел на
             пляже
-            <span class="check-box"></span>
+            <span class="check__box"></span>
           </label>
           <label class="form__label check">
             <input class="form__input" type="checkbox" />Видел Чака Норриса
-            <span class="check-box"></span>
+            <span class="check__box"></span>
           </label>
           <label class="form__label check">
             <input class="form__input" type="checkbox" />Накупил сувениров
-            <span class="check-box"></span>
+            <span class="check__box"></span>
           </label>
           <label class="form__label check">
             <input class="form__input" type="checkbox" checked />Удержал башню
-            <span class="check-box"></span>
+            <span class="check__box"></span>
           </label>
           <label class="form__label check">
             <input class="form__input" type="checkbox" />Разгромил отель
-            <span class="check-box"></span>
+            <span class="check__box"></span>
           </label>
         </div>
       </fieldset>
@@ -134,15 +138,15 @@
         <div class="form__container">
           <label class="form__label check">
             <input class="check__input" type="radio" checked />Pink для iOS
-            <span class="check-radio"></span>
+            <span class="check__radio"></span>
           </label>
           <label class="form__label check">
             <input class="check__input" type="radio" />Pink на Android
-            <span class="check-radio"></span>
+            <span class="check__radio"></span>
           </label>
           <label class="form__label check">
             <input class="check__input" type="radio" />Windows Phone
-            <span class="check-radio"></span>
+            <span class="check__radio"></span>
           </label>
         </div>
       </fieldset>
@@ -156,7 +160,7 @@
         ></textarea>
       </fieldset>
       <div class="form__submit-button">
-        <button class="form__submit-button button" type="submit">
+        <button class="form__submit-button" type="submit">
           Отправить форму
         </button>
       </div>
