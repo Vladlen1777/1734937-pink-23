@@ -5,12 +5,15 @@
 .page__body {
   width: 320px;
   margin: 0 auto;
+}
 
-  @media (min-width: @tablet-width) {
-    width: 660px;
-  }
+.page__header-catalog {
+  background-image: url(../img/back-mobile.jpg);
+  width: 320px;
+  height: 200px;
+  background-size: cover;
 
-  @media (min-width: @desktop-width) {
-    width: 1200px;
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/back-mobile@2x.jpg);
   }
 }
