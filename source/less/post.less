@@ -4,14 +4,96 @@
 
 .post__back {
   background-color: #f2f2f2;
+  height: 757px;
 }
 
 .post__header {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  padding-bottom: 50px;
   text-align: center;
   color: #283645;
+}
+
+.post__handle {
+  border: none;
+}
+
+.post__back img {
+  width: 280px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.post__icon {
+  display: flex;
+  justify-content: center;
+}
+
+.post__icon a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 15px;
+  width: 46px;
+  height: 48px;
+  text-decoration: none;
+}
+
+.post__range {
+  position: relative;
+  padding-top: 6px;
+  padding-left: 24px;
+}
+
+.post__range::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 320px;
+  background-color: rgba(40, 54, 69, 0.1);
+  top: 49px;
+  left: -14px;
+}
+
+.post__scale {
+  height: 2px;
+  background: #283645;
+  width: 240px;
+}
+
+.post__toggle {
+  border: 4px solid #d22856;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: -5px;
+  left: 194px;
+  width: 1px;
+  height: 1px;
+  position: relative;
+}
+
+.post__toggle-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-min {
+  position: absolute;
+  top: -10px;
+}
+
+.toggle-max {
+  position: absolute;
+  left: 255px;
+  top: -10px;
+}
+
+.post__fast {
+  margin-top: 73px;
+  margin-left: 8px;
 }
 
 .post__submit {
@@ -32,12 +114,9 @@
   font-weight: 700;
   line-height: 18px;
   color: #283645;
+  opacity: 0.1;
   border: 3px solid #283645;
   border-radius: 30px;
   list-style: none;
-}
-
-.post__handle {
-  display: flex;
-  flex-direction: row;
+  margin-top: 12px;
 }
